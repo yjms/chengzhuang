@@ -1,0 +1,96 @@
+.radioCss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20rpx;
+}
+
+radio {
+  transform: scale(0.8);
+}
+
+page {
+  background: #f4f4f4;
+}
+
+.wrap {
+  width: 94%;
+  display: flex;
+  background: white;
+  align-items: center;
+  position: relative;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+}
+
+.img28 {
+  position: relative;
+  top: 0rpx;
+  left: 30rpx;
+  width: 66vw;
+  color: #a8ada6;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flex29 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.text31 {
+  color: #4b5248;
+}
+
+.text30 {
+  color: #4b5248;
+  font-size: 32rpx;
+  margin-right: 20rpx;
+  font-weight: 600;
+}
+
+.text33 {
+  color: #4b5248;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+
+.btn {
+  height: 32rpx;
+  width: 32rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 38rpx;
+  border: 4rpx solid #97a192;
+  position: absolute;
+  right: 20rpx;
+}
+
+.btn1 {
+  margin-left: 4rpx;
+  width: 26rpx;
+  height: 26rpx;
+}
+.btn3{
+  width: 260rpx;
+  height: 80rpx;
+  background: #6C8E5F;
+  border-radius: 10rpx;
+  position: absolute;
+  bottom: 80rpx;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+page{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}

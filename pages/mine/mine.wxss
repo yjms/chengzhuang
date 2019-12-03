@@ -1,0 +1,147 @@
+.topBG {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.bgtop{
+  background: #789D69;
+  height: 300rpx;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.text3{
+  color: #FEFEFF;
+  font-size: 30rpx
+}
+.flex2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100rpx;
+}
+.avatar2{
+  height: 110rpx;
+  width: 110rpx;
+  border-radius: 100%
+}
+.wrap1 {
+  z-index: 333;
+  width: 90%;
+  background: white;
+  height: 234rpx;
+    border-radius: 10rpx;
+    margin-top: -90rpx;
+}
+
+page {
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10rpx;
+}
+
+.imgs1 {
+  height: 36rpx;
+  width: 36rpx;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.ab {
+  position: absolute;
+  right: 20rpx;
+}
+
+.wh {
+  height: 90rpx;
+  border-bottom: 2rpx solid #e1e5de;
+}
+
+.text6 {
+  font-size: 28rpx;
+  color: #a8ada6;
+}
+
+.text4 {
+  position: absolute;
+  left: 20rpx;
+  font-weight: 600;
+  font-size: 32rpx;
+}
+
+.imgsSize {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.flex13 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap11 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 144rpx;
+
+}
+
+.text15 {
+  color: #4b5248;
+  font-size: 24rpx;
+}
+.img22{
+  height: 40rpx;
+  width: 40rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.text23{
+  font-size: 32rpx;
+  color: #4B5248;
+  font-weight: 600
+}
+.wrap21{
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  width: 90%;
+  background: white;
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  position: relative
+}
+.arr{
+  position: absolute;
+  right: 20rpx;
+  height: 36rpx;
+  width: 36rpx;
+}
+.number{
+    position: absolute;
+    right: 0rpx;
+    top:0rpx;
+    border-radius: 50%;
+    width: 30rpx;
+    height: 30rpx;
+    background: red;
+    color: #fff;
+    z-index: 22;
+    font-size: 18rpx;
+    text-align: center;
+    line-height: 30rpx;
+
+}

@@ -1,0 +1,82 @@
+<view class='topWrap {{detail.status===2?"c":"d"}}'>
+  <view class='wrap2'>
+    <view class='text3'>{{detail.statusStr}}</view>
+    <view class='text4'>{{detail.statusRemark}}</view>
+  </view>
+  <image class='img3' mode='widthFix' src='{{detail.statusImg}}'></image>
+</view>
+<view class='flexT {{detail.status===2?"a":"b"}}'>
+  <view class='flex9 bl b1'>
+    <view class='wrap10'>
+      <image class='img10' src='../imgs/m5.png'></image>
+      <view class='flex11'>
+        <view class='flex12'>
+          <view class='text13'>{{detail.address.name}}</view>
+          <view class='text14'>{{detail.address.phone}}</view>
+        </view>
+        <view class='text16'>{{detail.address.address}}{{detail.address.addressDetail}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='flex9 b2' wx:if="{{detail.status===2}}">
+  </view>
+  <view class='flex9 b2' wx:else>
+    <view class='wrap10 nl' catchtap="{{eps[0].status?'naviEps':''}}">
+      <image class='img10' src='../imgs/wl.png'></image>
+      <view class="flex11">
+        <view class='text22'>物流信息</view>
+         <view wx:if="{{eps[0].status}}" class='text23'>{{eps[0].status}}</view>
+        <view wx:else class='text23'>暂无物流信息</view>
+      </view>
+      <image class='img10 sz' src='../imgs/2.png'></image>
+    </view>
+  </view>
+</view>
+<view class='wrap7'>
+  <block wx:for="{{detail.rels}}">
+    <view class='flex8' bindtap="goDetai">
+      <image class='imgs9' src="{{item.goods.mainImgPath}}"></image>
+      <view class='flexcol'>
+        <view class='flexrow'>
+          <view>
+            <view class='text13'>{{item.goods.name}}</view>
+            <view class='text14'>{{item.goods.description}}</view>
+          </view>
+          <!-- <view class='text16'>等待买家付款</view> -->
+        </view>
+        <view class='flexrow'>
+          <view class='text19'>￥{{item.goods.price}}</view>
+          <view>X{{item.quantity}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class='flex24'>
+    <view class='flex25'>
+      <view>运送费</view>
+      <view>包邮 </view>
+    </view>
+	<view class='flex25' wx:if="{{detail.discountAmount}}">
+      <view>优惠券</view>
+      <view>-￥{{detail.discountAmount}} </view>
+    </view>
+    <view class='flex30'>
+      <view class='text31'>共{{detail.goodsNum}}件商品，合计：</view>
+      <view class='text32'>￥{{detail.payPrice?detail.payPrice:detail.totalPrice}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='flex68'>
+  <view class='text69'>订单编号</view>
+  <view class='wrap70'>
+    <view class='text71'>订单编号</view>
+    <view class='text71'>{{tradeNo1}}</view>
+    <view class='text73' catchtap="copy">复制</view>
+  </view>
+  <view class='wrap70'>
+    <view class='text71'>创建时间</view>
+    <view class='text71'>{{detail.createDate}}</view>
+
+  </view>
+</view>

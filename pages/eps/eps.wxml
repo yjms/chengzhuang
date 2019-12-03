@@ -1,0 +1,33 @@
+
+<view class="wrap">
+  <image src="{{order.mainImgPath}}" class="wrap1"></image>
+  <view class="wrap2">
+    <view wx:if="{{eps2.deliveryStatus==0}}" class="text1">快递收件</view>
+    <view wx:if="{{eps2.deliveryStatus==1}}" class="text1">在途中</view>
+    <view wx:if="{{eps2.deliveryStatus==2}}" class="text1">正在派件</view>
+    <view wx:if="{{eps2.deliveryStatus==3}}" class="text1">已签收</view>
+    <view wx:if="{{eps2.deliveryStatus==4}}" class="text1">派送失败</view>
+    <view wx:if="{{eps2.deliveryStatus==5}}" class="text1">疑难件</view>
+    <view wx:if="{{eps2.deliveryStatus==6}}" class="text1">退件签收</view>
+    <view class="text2">{{order.name}}</view>
+  </view>
+</view>
+
+<view class="wrap3">
+  <block wx:for='{{eps}}'>
+    <view class="wrap4">
+      <view class="flex11">
+        <view class="text12 {{index===0?'bl':''}}">{{item.time}}</view>
+      </view>
+      <view class="flex27">
+        <image class="img15" src="./imgs/a12.png"></image>
+        <view wx:if="{{index!=eps.length-1}}" class="line"></view>
+      </view>
+      <view class="wrap16">
+        <view class="wrap18 {{index===0?'bl':''}}">{{item.status}}
+        </view>
+      </view>
+
+    </view>
+  </block>
+</view>

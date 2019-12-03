@@ -1,0 +1,36 @@
+.loginBtn {
+  width: 100%;
+}
+
+.logo {
+  width: 220rpx;
+  height: 220rpx;
+  margin-bottom: 100rpx;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.btn {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+button::after {
+  border: none;
+}
+
+button {
+opacity: 0
+}
+
+.btn2 {
+  width: 80%;
+  position: relative;
+}

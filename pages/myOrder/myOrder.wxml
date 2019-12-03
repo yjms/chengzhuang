@@ -1,0 +1,57 @@
+<view class='flex1'>
+    <block wx:for="{{topData}}" wx:key="topData">
+        <view class='{{chooseIndex===index?"chooseCss":"css2"}}' data-index="{{index}}" catchtap='choose'>{{item.title}}</view>
+    </block>
+</view>
+<view class="noData" wx:if="{{!list.length>0}}">暂无数据~</view>
+<block wx:for="{{list}}" wx:key="list">
+    <view class='wrap7' catchtap="naviDetail" data-item="{{item}}">
+
+        <block wx:for="{{item.rels}}" wx:key="item">
+            <view class='flex8'>
+                <image src="{{item.goods.mainImgPath}}" class='imgs9'></image>
+                <view class='flexcol'>
+                    <view class='flexrow'>
+                        <view class="autorow setFlex nowrap">
+                            <text class='text13 '>{{item.goods.name}}</text>
+                            <view class='text14 nowrap'>{{item.goods.description}}</view>
+                        </view>
+                        <text class='text16' wx:if="{{item.status===2}}">等待买家付款</text>
+                        <text class='text16' wx:if="{{item.status===3}}">准备发货中</text>
+                        <text class='text16' wx:if="{{item.status===4}}">卖家已发货</text>
+                        <text class='text16' wx:if="{{item.status===5}}">已完成</text>
+                    </view>
+                    <view class='flexrow'>
+                        <view class='text19'>￥{{item.goods.price}}</view>
+                        <view class="text21">X{{item.quantity}}</view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <view class='flex24'>
+            <view class='flex25'>
+                <view>运送费</view>
+                <view>包邮 </view>
+            </view>
+
+            <view class='flex30'>
+                <view class='text31'>共{{item.goodsNum}}件商品，合计：</view>
+                <view class='text32'>￥{{item.payPrice?item.payPrice:item.totalPrice}}</view>
+            </view>
+
+            <view wx:if="{{item.status===2}}" class='flex30'>
+                <view catchtap="cancelOrder" data-item="{{item}}" data-index="{{index}}" class='btn c50'>取消订单</view>
+                <view catchtap="wxPay" data-item="{{item}}" class='btn c38'>付款</view>
+            </view>
+            <view wx:if="{{item.status===3}}" class='flex30'>
+                <!-- <view class='btn'></view> -->
+                <!-- <view class='btn c38'>我要催单</view> -->
+            </view>
+            <view wx:if="{{item.status===4}}" class='flex30'>
+                <view class='btn c50'>查看物流</view>
+                <view class='btn c38'>确认收货</view>
+            </view>
+
+        </view>
+    </view>
+</block>

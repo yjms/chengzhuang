@@ -1,0 +1,88 @@
+<!-- 提交详情页面 -->
+<wxs src="./tools.wxs" module="tools" />
+<view catchtap="naviAdd" wx:if="{{list.length>0}}" class='wrap' data-item="{{list[0]}}">
+  <!-- <radio data-index="{{index}}" catchtap="checkRadio" color='#6C8E5F' class='radioCss' checked="{{item.check}}" /> -->
+  <view class='img28'>
+    <view class='flex29'>
+      <view class='text30'>{{list[addid].name}}</view>
+      <view class='text31'>{{list[addid].phone}}</view>
+    </view>
+    <view class='text33'>{{list[addid].address}}{{list[addid].addressDetail}}</view>
+  </view>
+  <view class='btn'>
+    <image class='btn1' src='../imgs/2.png'></image>
+  </view>
+</view>
+
+<view wx:else class="wrap1" catchtap="naviAdd2">
+  <view class='wrap2'>
+    <image class='img3' src='../imgs/m5.png'></image>
+    <view class='flex4'>
+      <view class='text5'>添加地址</view>
+      <image class='img3 size6' src='../imgs/add.png'></image>
+    </view>
+    <view></view>
+  </view>
+</view>
+
+
+<view class='wrap3'>
+  <block wx:for="{{payData.rels}}" wx:key="payData">
+    <view class='flex13'>
+      <image class='img14' src="{{item.goods.mainImgPath}}"></image>
+      <view class='flex15'>
+        <view>
+          <view class='text17'>{{item.goods.name}}</view>
+          <view class='text18'>{{item.goods.description}}</view>
+        </view>
+        <view class='flex18'>
+          <view>￥{{item.goods.price}}</view>
+          <view class="text38">X{{item.quantity}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class='flex27'>
+    <view class='text28'>配送方式</view>
+    <view class='text29'>普通配送</view>
+    <view class='flex30'>
+      <view>韵达快递</view>
+      <!-- <image class='arr' src='../imgs/2.png'></image> -->
+    </view>
+  </view>
+
+  <view class='flex27'>
+    <view class='text28'>运送费</view>
+    <view class='text29 cc'>包邮</view>
+  </view>
+
+  <view class='flex27' bindtap="checkCard">
+    <view class='text28'>优惠券抵扣</view>
+    <view class='text29'></view>
+    <view class='flex30'>
+      <view class="cardtxt">{{yh_money?"已抵扣"+yh_money+"元":payData.couponCount+"张优惠券可使用"}}</view>
+      <image class='arr' src='../imgs/2.png'></image>
+    </view>
+  </view>
+
+  <view class='flex27'>
+    <view class='text28'>用户留言</view>
+    <view class='text44 c2'>
+    <textarea class='detail-textarea' auto-height='true' maxlength='100' bindinput='getTextareaInput'/>
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='wrap48'>
+    <view class='ab'>
+      <view class='text50'>共计{{payData.goodsNum}}件商品</view>
+      <view class='text51'>小计：</view>
+      <view class='text52'>￥{{yh_money?(tools.cut(payData.totalPrice,yh_money)>=0?tools.cut(payData.totalPrice,yh_money):0):payData.totalPrice}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='flex57'>
+  <view class='text58'>实付：</view>
+  <view class='text59'>￥{{yh_money?(tools.cut(payData.totalPrice,yh_money)>=0?tools.cut(payData.totalPrice,yh_money):0):payData.totalPrice}}</view>
+  <view catchtap="wxPay" class='btn60'>提交订单</view>
+</view>

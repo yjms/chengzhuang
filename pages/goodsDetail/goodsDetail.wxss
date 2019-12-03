@@ -1,0 +1,153 @@
+@import "../wxParse/wxParse.wxss";
+.goodsImg {
+  height: 400rpx;
+  background: black;
+  width: 100%;
+}
+
+.goodsDetail {
+  background: white;
+  padding-bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+  /* border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx; */
+
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.imgs6 {
+  margin-top: 20rpx;
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.wrap3 {
+  width: 90%;
+}
+
+.img10 {
+  height: 120rpx;
+
+}
+
+.botBtn {
+  height: 120rpx;
+  background: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10rpx;
+}
+
+.img16 {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.flex15 {
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text17 {
+  color: #4b5248;
+  font-size: 20rpx;
+}
+
+.btn1 {
+  width: 250rpx;
+  height: 80rpx;
+  background: #8e795f;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.btn2 {
+  width: 250rpx;
+  height: 80rpx;
+  background: #8e795f;
+  position: absolute;
+  right: 40rpx;
+  border-radius: 10rpx;
+  background: #6c8e5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.text4 {
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  color: #4b5248;
+}
+
+.text5 {
+  color: #a8ada6;
+  font-size: 24rpx;
+}
+
+.text6 {
+  color: #789d69;
+  font-size: 42rpx;
+  margin-top: 20rpx;
+}
+.text8{
+  color: #4B5248;
+  font-size: 32rpx;
+  font-weight: 600
+}
+.text9{
+  color: #A8ADA6;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.swiperWrap {
+  width: 100%;
+  height: 400rpx;
+}
+
+page {
+  /* background: #f4f4f4; */
+}
+
+.sitem {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.bgC {
+  width: 100%;
+  height:400rpx;
+}
+.number{
+    position: absolute;
+    right: 70rpx;
+    top:0rpx;
+    border-radius: 50%;
+    min-width: 20rpx;
+    min-height: 20rpx;
+    padding: 4rpx;
+    background: red;
+    color: #fff;
+    z-index: 22;
+    font-size: 18rpx;
+    text-align: center;
+    line-height: 20rpx;
+
+}

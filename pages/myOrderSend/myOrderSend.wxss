@@ -1,0 +1,309 @@
+.flex1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100rpx;
+  width: 100%;
+  font-size: 30rpx;
+  color: #4b5248;
+  background: white;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+page {
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30rpx;
+}
+
+.chooseCss {
+  color: #789d69;
+  border-bottom: 6rpx solid #789d69;
+  line-height: 100rpx;
+  width: 100rpx;
+}
+
+.css2 {
+  width: 100rpx;
+}
+
+.wrap7 {
+  margin-top: 30rpx;
+  background: white;
+  width: 90%;
+  padding: 20rpx;
+  position: relative;
+  border-radius: 10rpx;
+}
+
+.imgs9 {
+  height: 180rpx;
+  width: 180rpx;
+  border-radius: 10rpx;
+}
+
+.flex8 {
+  display: flex;
+  flex-direction: row;
+  height: 180rpx;
+  width: 100%;
+
+  padding-bottom: 20rpx;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20rpx;
+  width: 70%;
+}
+
+.flexrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text16 {
+  color: #789d69;
+  font-size: 24rpx;
+}
+
+.text13 {
+  color: #4b5248;
+  font-size: 30rpx;
+}
+
+.text14 {
+  color: #a8ada6;
+  font-size: 24rpx;
+  margin-left: 10rpx;
+}
+
+.text19 {
+  color: #4b5248;
+  font-size: 32rpx;
+}
+
+.flex24 {
+    border-top: 1rpx solid #d2d7ce;
+  width: 100%;
+}
+
+.flex25 {
+  font-size: 28rpx;
+  color: #4b5248;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.flex30 {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  width: 100%;
+  right: 0;
+  justify-content: flex-end;
+}
+
+.btn {
+  width: 200rpx;
+  height: 60rpx;
+  border-radius: 60rpx;
+  border: 1rpx solid #a5aca3;
+}
+
+.text31 {
+  font-size: 30rpx;
+  color: #4b5248;
+}
+
+.c38 {
+  background: #789d69;
+  margin-left: 30rpx;
+}
+
+.text32 {
+  color: #789d69;
+  font-size: 42rpx;
+}
+
+.topWrap {
+  height: 400rpx;
+  background: #789d69;
+  width: 100%;
+  position: relative;
+}
+
+.img3 {
+  width: 375rpx;
+  position: absolute;
+  right: 0rpx;
+  top: 40rpx;
+}
+
+.wrap2 {
+  position: absolute;
+  top: 80rpx;
+  left: 30rpx;
+  color: white;
+}
+
+.text4 {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+}
+
+.text3 {
+  font-size: 40rpx;
+  font-weight: 600;
+}
+
+.img10 {
+  height: 58rpx;
+  width: 58rpx;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+}
+
+.flex11 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /* left: 20%;
+  position: absolute */
+}
+
+.flex9 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  justify-content: center;
+}
+
+.wrap10 {
+  width: 96%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #d2d7ce;
+}
+
+.flex12 {
+  padding-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sz {
+  height: 36rpx;
+  width: 36rpx;
+  margin: 0;
+  position: absolute;
+  right: 20rpx;
+}
+
+.bl {
+}
+
+.text13 {
+  color: #4b5248;
+  font-size: 30rpx;
+}
+
+.text14 {
+  color: #a8ada6;
+  font-size: 26rpx;
+}
+
+.text16 {
+  padding-bottom: 20rpx;
+  color: #a8ada6;
+  font-size: 26rpx;
+}
+
+.text22 {
+  font-size: 30rpx;
+  color: #4b5248;
+  padding-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.text23 {
+  color: #a8ada6;
+  font-size: 26rpx;
+  padding-bottom: 20rpx;
+  width: 80%;
+}
+
+.nl {
+  border: none;
+}
+
+.flexT {
+  margin-top: -180rpx;
+  z-index: 333;
+  background: white;
+  border-radius: 10rpx;
+  width: 90%;
+  padding: 20rpx;
+}
+
+.b1 {
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+
+.b2 {
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+
+.flex68 {
+  border-radius: 10rpx;
+  width: 90%;
+  padding: 20rpx;
+  background: white;
+  margin-top: 30rpx;
+}
+.text69{
+  font-size: 30rpx;
+  color: #4B5248;
+  font-weight: 600
+}
+.wrap70{
+  margin-top: 20rpx;
+  width: 100%;
+  display: flex;
+  align-items: center
+}
+.text71{
+  margin-right: 60rpx;
+  color: #A8ADA6;
+  font-size: 26rpx;
+}
+.text73{
+  position: absolute;
+  right: 50rpx;
+  font-size: 26rpx;
+  color: #789D69
+}
+.a{
+  margin-top: -40rpx
+}
+.c{
+  height: 300rpx;
+}

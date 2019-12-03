@@ -1,0 +1,160 @@
+.flex1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100rpx;
+  width: 100%;
+  font-size: 30rpx;
+  color: #4b5248;
+  background: white;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+page {
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60rpx;
+}
+
+.chooseCss {
+  color: #789d69;
+  border-bottom: 6rpx solid #789d69;
+  line-height: 100rpx;
+  width: 100rpx;
+}
+
+.css2 {
+  width: 100rpx;
+}
+
+.wrap7 {
+  margin-top: 30rpx;
+  background: white;
+  width: 90%;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  position: relative;
+}
+
+.imgs9 {
+  height: 180rpx;
+  width: 180rpx;
+  border-radius: 10rpx;
+}
+
+.flex8 {
+  display: flex;
+  flex-direction: row;
+  height: 180rpx;
+  width: 100%;
+  padding-bottom: 30rpx;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20rpx;
+  width: 70%;
+}
+
+.flexrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text16 {
+  color: #789d69;
+  font-size: 24rpx;
+
+  /* position: absolute;
+  right: 20rpx;
+  top: 30rpx; */
+}
+
+.text13 {
+  color: #4b5248;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.text14 {
+  color: #a8ada6;
+  font-size: 24rpx;
+}
+
+.text19 {
+  color: #4b5248;
+  font-size: 32rpx;
+
+}
+.text21{
+  font-size: 28rpx;
+    color: #4b5248;
+}
+.flex24 {
+  width: 100%;
+  border-top: 1rpx solid #d2d7ce;
+}
+
+.flex25 {
+  font-size: 28rpx;
+  color: #4B5248;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.flex30 {
+  display: flex;
+  align-items: center;
+    margin-top: 20rpx;
+  width: 100%;
+
+  right: 0;
+  justify-content: flex-end;
+} 
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 200rpx;
+  height: 60rpx;
+  border-radius: 60rpx;
+  border: 1rpx solid #a5aca3;
+}
+.text31{
+  font-size: 30rpx;
+  color: #4B5248
+}
+.c50{
+    color: #789D69;
+    border: 1rpx solid #789D69
+}
+.c38 {
+  background: #789d69;
+  margin-left: 30rpx;
+}
+.text32{
+  color: #789D69;
+  font-size: 42rpx
+}
+.autorow{
+	display: inline-block
+}
+.noData{
+	width: 100%;
+	text-align: center;
+	color: #888;
+	font-size: 24rpx;
+	padding-top: 150rpx;
+}

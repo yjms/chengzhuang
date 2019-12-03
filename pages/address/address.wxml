@@ -1,0 +1,19 @@
+
+<!--  个人中心入口进来  添加地址页面  -->
+<block wx:for="{{list}}" wx:key="list">
+  <view class='wrap' data-item="{{item}}" catchtap="navi2">
+    <!-- <radio data-index="{{index}}" catchtap="checkRadio" color='#6C8E5F' class='radioCss' checked="{{item.check}}" /> -->
+    <view class='img28'>
+      <view class='flex29'>
+        <view class='text30'>{{item.name}}</view>
+        <view class='text31'>{{item.phone}}</view>
+      </view>
+      <view class='text33'>{{item.address}}{{item.addressDetail}}</view>
+    </view>
+    <view class='btn'>
+      <image class='btn1' src='../imgs/2.png'></image>
+    </view>
+
+  </view>
+  </block>
+  <view class="btn3" catchtap="navi">添加新地址</view>

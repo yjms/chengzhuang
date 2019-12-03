@@ -1,0 +1,77 @@
+page{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.size{
+  width: 104rpx;
+  height: 95rpx;
+  margin-top: 200rpx;
+}
+.text{
+  font-size: 32rpx;
+  color: #4B5248;
+  font-weight: 600;
+  margin-top: 100rpx;
+}
+.btn{
+  height: 76rpx;
+width: 260rpx;
+background: #6C8E5F;
+border-radius: 10rpx;
+color: white;
+margin-top: 100rpx;
+display: flex;
+align-items: center;
+justify-content: center
+}
+.showView {
+  top: 0;
+  position: fixed;
+  z-index: 3333;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+}
+.bg{
+  height: 300rpx;
+  width: 70%;
+  background: white;
+  margin-top: -100rpx;
+  border-radius: 20rpx;
+  position: relative;
+  padding: 40rpx;
+}
+.del{
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+  height: 44rpx;
+  width: 44rpx;
+  transform:rotate(45deg);
+}
+.cell{
+  width: 100%;
+  height: 120rpx;
+  
+  margin-top: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.cell2{
+  width: 100%;
+  height: 100rpx;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.text10{
+  font-weight: 500;
+
+}

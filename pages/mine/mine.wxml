@@ -1,0 +1,59 @@
+<view class="bgtop">
+ <view wx:if="{{userInfo}}" class="flex2">
+    <image class="avatar2" src="{{userInfo.avatarUrl}}"></image>
+    <view class="text3">{{userInfo.nickName}}</view>
+  </view>
+  <view wx:else class="flex2" catchtap="navi2">
+    <image class="avatar2" src="../imgs/avatar.png"></image>
+    <view class="text3">请点击登录</view>
+  </view>
+</view>
+<view class='wrap1'>
+  <view class='flexrow wh' catchtap="naviOrder">
+    <view class='text4'>我的订单</view>
+    <view class='flexrow ab'>
+      <view class='text6'>查看全部订单</view>
+      <image class='imgs1' src='../imgs/2.png'></image>
+    </view>
+  </view>
+
+  <view class='wrap11'>
+    <block wx:for="{{imgData}}" wx:key="imgData">
+        <block wx:if="{{index==0}}">
+            <view class='flex13' catchtap="navi20" data-index="{{index}}" style="position:relative;">
+              <image class='imgsSize' src='{{item.imgs}}'></image>
+              <view class='text15'>{{item.title}}</view>
+              <view class='{{numbers?"numbers":"number"}}' wx:if="{{orderCount.waitPayCount}}">{{orderCount.waitPayCount}}</view>
+            </view>
+        </block>
+        <block wx:if="{{index==1}}">
+          <view class='flex13' catchtap="navi20" data-index="{{index}}" style="position:relative;">
+            <image class='imgsSize' src='{{item.imgs}}'></image>
+            <view class='text15'>{{item.title}}</view>
+			<view class='number' wx:if="{{orderCount.waitShipCount}}">{{orderCount.waitShipCount}}</view>
+          </view>
+        </block>
+		<block wx:if="{{index==2}}">
+          <view class='flex13' catchtap="navi20" data-index="{{index}}" style="position:relative;">
+            <image class='imgsSize' src='{{item.imgs}}'></image>
+            <view class='text15'>{{item.title}}</view>
+			<view class='number' wx:if="{{orderCount.waitSignCount}}">{{orderCount.waitSignCount}}</view>
+          </view>
+        </block>
+		<block wx:if="{{index==3}}">
+          <view class='flex13' catchtap="navi20" data-index="{{index}}" data-type="1" style="position:relative;">
+            <image class='imgsSize' src='{{item.imgs}}'></image>
+            <view class='text15'>{{item.title}}</view>
+			<!-- <view class='number' wx:if="{{index!=3}}">{{orderCount.waitSignCount}}</view> -->
+          </view>
+        </block>
+    </block>
+  </view>
+</view>
+<block wx:for="{{imgData2}}">
+  <view class='wrap21' catchtap="navi" data-index="{{index}}">
+    <image class='img22' src='{{item.imgs}}'></image>
+    <view class='text23'>{{item.title}}</view>
+    <image class='arr' src='{{item.img2}}'></image>
+  </view>
+</block>

@@ -1,0 +1,34 @@
+
+<view class="tab-bar">
+  <view class="tab-bar-border"></view>
+  <block wx:for="{{list}}" wx:key="index" wx:for-index="idx">
+              <view   class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{idx}}" data-id="{{idx}}" bindtap="switchTab" >
+                <block wx:if="{{idx==selected2}}">
+                <image src="{{item.selectedIconPath}}">{{idx}}</image>
+                </block>
+                <block  wx:elif="{{idx==1&& idx==selected2}}">
+                <view style="position:relative;display:flex;">
+                     <image src="{{item.selectedIconPath}}">{{idx}}</image>
+                     <view src="{{item.selectedIconPath}}" class="number">{{cartCount}}  个  </view>
+                </view>     
+                </block>  
+                <block  wx:elif="{{idx==1&& idx!=selected2}}">
+                <view style="position:relative;display:flex;">
+                     <image src="{{item.iconPath}}">{{idx}}</image>
+                     <view src="{{item.selectedIconPath}}" class="number">{{cartCount}}  个  </view>
+                </view>     
+                </block>                                
+                <block wx:else>
+                  <image src="{{item.iconPath}}"></image>
+                </block>
+                <block wx:if="{{idx==selected2}}">
+                   <view style="color: {{selectedColor}}">{{item.text}}</view> 
+                </block>
+                <block wx:else>
+                    <view style="color: {{color}}">{{item.text}}</view> 
+                </block>
+                </view>
+
+  </block>
+ 
+</view>

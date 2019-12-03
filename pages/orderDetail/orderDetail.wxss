@@ -1,0 +1,303 @@
+page {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrap1 {
+    margin-top: 20rpx;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrap2 {
+    padding: 20rpx;
+    width: 90%;
+    height: 181rpx;
+    background: white;
+    display: flex;
+    border-radius: 10rpx;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img3 {
+    height: 60rpx;
+    width: 60rpx;
+}
+
+.text {
+    color: #4b5248;
+    font-size: 30rpx;
+}
+
+.flex4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text18 {
+    color: #a8ada6;
+    font-size: 24rpx;
+}
+
+.size6 {
+    height: 40rpx;
+    width: 40rpx;
+    margin-left: 10rpx;
+}
+
+.text5 {
+    color: #97a192;
+    font-size: 40rpx;
+    font-weight: 600;
+}
+
+.wrap3 {
+    padding: 20rpx;
+    margin-top: 20rpx;
+    width: 90%;
+    background: white;
+    border-radius: 10rpx;
+    position: relative;
+}
+
+.text38 {
+    font-size: 28rpx;
+}
+
+.detail-textarea {
+    width: 100%;
+    padding-left: 10rpx;
+    color: black;
+}
+
+.img14 {
+    height: 181rpx;
+    width: 181rpx;
+    margin-left: 20rpx;
+    border-radius: 10rpx;
+    margin-top: 20rpx;
+}
+
+.flex18 {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex13 {
+    display: flex;
+    padding-bottom: 30rpx;
+}
+
+.flex15 {
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 181rpx;
+    width: 60%;
+    position: absolute;
+    right: 20rpx;
+}
+
+.flex18 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex27 {
+    display: flex;
+    margin-bottom: 20rpx;
+    position: relative;
+    font-size: 28rpx;
+    color: #4b5248;
+}
+
+.arr {
+    height: 36rpx;
+    width: 36rpx;
+}
+
+.flex30 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 20rpx;
+    color: #4b5248;
+    font-size: 28rpx;
+}
+
+.text28 {
+    margin-left: 80rpx;
+}
+
+.text29 {
+    margin-left: 30rpx;
+    color: #a8ada6;
+    font-size: 28rpx;
+}
+
+.text44 {
+    margin-left: 20rpx;
+    width: 50vw;
+}
+
+.line {
+    width: 90%;
+    margin-left: 5%;
+    height: 2rpx;
+    border-bottom: 1rpx dotted #4b5248;
+}
+
+.wrap48 {
+    height: 100rpx;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.ab {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    position: absolute;
+    justify-content: flex-end;
+    right: 30rpx;
+    font-size: 28rpx;
+    color: #4b5248;
+}
+
+.cc {
+    color: #4b5248;
+}
+
+.c2 {
+    color: #a8ada6;
+}
+
+.text52 {
+    color: #789d69;
+    font-size: 32rpx;
+}
+
+.text50 {
+    font-weight: 600;
+    margin-right: 10rpx;
+}
+
+.text51 {
+    font-weight: 600;
+}
+
+.flex57 {
+    position: fixed;
+    bottom: 0;
+    height: 120rpx;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding-bottom: 40rpx;
+}
+
+.btn60 {
+    background: #6c8e5f;
+    color: white;
+    right: 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10rpx;
+    height: 80rpx;
+    width: 260rpx;
+    position: absolute;
+}
+
+.text58 {
+    font-size: 30rpx;
+    color: #4b5248;
+    margin-left: 40rpx;
+}
+
+.text59 {
+    font-size: 42rpx;
+    color: #789d69;
+}
+
+.wrap {
+    width: 94%;
+    display: flex;
+    background: white;
+    align-items: center;
+    position: relative;
+    padding-top: 40rpx;
+    padding-bottom: 40rpx;
+    margin-top: 20rpx;
+    border-radius: 10rpx;
+}
+
+.img28 {
+    position: relative;
+    top: 0rpx;
+    left: 30rpx;
+    width: 66vw;
+    color: #a8ada6;
+    font-size: 28rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.flex29 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.text31 {
+    color: #4b5248;
+}
+
+.text30 {
+    color: #4b5248;
+    font-size: 32rpx;
+    margin-right: 20rpx;
+    font-weight: 600;
+}
+
+.text33 {
+    color: #4b5248;
+    font-size: 28rpx;
+    margin-top: 10rpx;
+}
+
+.btn {
+    height: 32rpx;
+    width: 32rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 38rpx;
+    border: 4rpx solid #97a192;
+    position: absolute;
+    right: 20rpx;
+}
+
+.btn1 {
+    margin-left: 4rpx;
+    width: 26rpx;
+    height: 26rpx;
+}
+
+.cardtxt {
+    font-size: 28rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: rgba(114, 149, 100, 1);
+}

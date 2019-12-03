@@ -1,0 +1,7 @@
+<view class='flex'>
+  <image class='logo' mode='' src='../imgs/logo.png'></image>
+  <view class='btn2'>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='btn'></button>
+    <image class='loginBtn' mode='widthFix' src='../imgs/login.png'></image>
+  </view>
+</view>

@@ -1,0 +1,62 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/return/return",
+		"pages/eps/eps",
+		"pages/service/service",
+		"pages/myOrderSend/myOrderSend",
+		"pages/goodsDetail/goodsDetail",
+		"pages/address/address",
+		"pages/address2/address2",
+		"pages/addaddress/addaddress",
+		"pages/login/login",
+		"pages/service3/service3",
+		"pages/service2/service2",
+		"pages/myOrder/myOrder",
+		"pages/orderDetail/orderDetail",
+		"pages/cart/cart",
+		"pages/mine/mine",
+		"pages/logs/logs",
+		"pages/mytickets/mytickets"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#789D69",
+		"navigationBarTitleText": "橙妆爱品",
+		"navigationBarTextStyle": "white"
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "用于填写地址"
+		}
+	},
+	"tabBar": {
+		"custom": true,
+		"color": "#696969",
+		"selectedColor": "#4B5248",
+		"backgroundColor": "#fff",
+		"borderStyle": "black",
+		"position": "bottom",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "pages/imgs/a1.png",
+				"selectedIconPath": "pages/imgs/a2.png"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"text": "购物车",
+				"iconPath": "pages/imgs/a3.png",
+				"selectedIconPath": "pages/imgs/a4.png"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "pages/imgs/a5.png",
+				"selectedIconPath": "pages/imgs/a6.png"
+			}
+		]
+	},
+	"sitemapLocation": "sitemap.json"
+}

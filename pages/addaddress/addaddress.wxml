@@ -1,0 +1,45 @@
+
+<!-- 添加地址页面  -->
+<view class="wrap">
+  <view class='flex'>
+    <view class='text1'>姓名</view>
+    <input bindinput="userName" value="{{username}}" style="color: #4b5248;font-size:28rpx;" placeholder-class='ip2' class='ip' placeholder='请填写收货人姓名'></input>
+  </view>
+
+  
+  <view class='flex'>
+    <view class='text1'>手机号</view>
+    <input bindinput="phone" style="color: #4b5248;font-size:28rpx;" type='number' value="{{phone}}" placeholder-class='ip2' class='ip' placeholder='请填写收货手机号码'></input>
+  </view>
+  <!-- 省市区  -->
+  
+  <view class='flex'>
+      <view class="text1">地区选择</view>
+      
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view style="color: #4b5248;font-size:28rpx;">
+         {{region[0]}}，{{region[1]}}，{{region[2]}}
+        </view>
+      </picker>
+  </view>
+  <!-- 门牌号 -->
+  <view class='flex'>
+    <view class='text1'>门牌号</view>
+    <input bindinput="area" style="color: #4b5248;font-size:28rpx;" value="{{area}}" placeholder-class='ip2' class='ip' placeholder='详细地址，例如：3号楼三单元303'></input>
+  </view>
+  <!-- 设为默认 -->
+  <view class='flex'>
+    <view class='text1'>设为默认</view>
+    <switch class='size' color="#769B68" checked="{{checked}}" bindchange="switch1Change" />
+  </view>
+
+
+</view>
+<view class="flex32" wx:if="{{isS}}">
+ <view  class="btn4" catchtap="del2">删除</view>
+  <view class="btn3" catchtap="upload">保存</view>
+</view>
+<view class="flex32" wx:else>
+
+  <view class="btn5" catchtap="upload">保存</view>
+</view>

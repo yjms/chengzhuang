@@ -1,0 +1,36 @@
+<!-- <view class="goodsImg"></view> -->
+<import src="../wxParse/wxParse.wxml" />
+<swiper class='swiperWrap' indicator-dots='true' autoplay='{{false}}' circular='true'>
+  <block wx:for="{{detail.imgPaths}}" wx:for-index="index">
+    <swiper-item class="sitem">
+      <!-- <view class='bgC'></view> -->
+      <image src='{{item}}' class='bgC' mode='widthFix'></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='goodsDetail'>
+  <view class='wrap3'>
+    <view class='text4'>{{detail.name}}</view>
+    <view class='text5'>{{detail.description}}</view>
+    <view class='text6'>￥{{detail.price}}</view>
+    <image mode='widthFix' class='imgs6' src='../imgs/d1.png'></image>
+    <view class='text8'>商品详情</view>
+    
+    <view class='text9'>
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <view class='img10'></view>
+  </view>
+
+</view>
+<view class='botBtn'>
+  <view class='flex15' catchtap="navicart" style="position:relative">
+    <image class='img16' src='../imgs/3.png'></image>
+    <view class='text17'>购物车</view>
+    <view class="number" wx:if="{{cartCount}}" >{{cartCount}}</view>
+  </view>
+
+  <view data-goodsId="{{detail.id}}" catchtap='addCart' class='btn1'>加入购物车</view>
+  <view catchtap='naviDetail' class='btn2'>立即购买</view>
+</view>

@@ -1,0 +1,20 @@
+<image class="size" src="../imgs/j1.png"></image>
+<view class="text">如需退款请联系客服</view>
+<view catchtap="show" class="btn">立即联系</view>
+<view wx:if="{{showB}}" class="showView">
+
+  <view class="bg">
+
+    <image catchtap="del2" class="del" src="../imgs/add.png"></image>
+    <view class="cell" catchtap="copy">
+      <view class="text10">微信号：wxid_985k9l7t770a22</view>
+      <view>复制</view>
+    </view>
+     <view class="cell2" catchtap="phone">
+      <view class="text10">联系方式：13670111017</view>
+      <view>拨号</view>
+    </view>
+  </view>
+
+</view>
+<!--  -->

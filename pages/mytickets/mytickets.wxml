@@ -1,0 +1,23 @@
+<view class="whole">
+	<view class="handBox">
+		<text class="{{currTab==1?'active':''}}" bindtap="changeTab" data-tab="1">未使用</text>
+		<text class="{{currTab==2?'active':''}}" bindtap="changeTab" data-tab="2">已使用</text>
+		<text class="{{currTab==3?'active':''}}" bindtap="changeTab" data-tab="3">已过期</text>
+	</view>
+	<view class="noData" wx:if="{{isNodata}}">暂无优惠券~</view>
+	<view class="centerBox">
+		<view class="qlist" bindtap="checkCard" data-cid="{{item.id}}" data-money="{{item.coupon.discountAmount}}" style="background-image:url({{BASEIMG}}{{cardImg[currTab-1].bg}})" wx:for="{{cardData}}" wx:key="item">
+			<view class="leftbox">
+				<text class="txt1 {{currTab==3?'guoqi':''}}">{{item.coupon.discountAmount}}</text>
+				<text class="txt2 {{currTab==3?'guoqi':''}}">RMB</text>
+			</view>
+			<view class="rightbox">
+				<text class="txt3 {{currTab==3?'guoqi':''}}">{{item.coupon.couponName}}</text>
+				<text class="txt4 {{currTab==3?'guoqi':''}}">有效期{{item.coupon.validityPeriod}}</text>
+				<text class="txt5 {{currTab==3?'guoqi':''}}">{{item.coupon.description}}</text>
+				<image class="duihuan" mode="widthFix" wx:if="{{cardImg[currTab-1].log!=''}}" src="{{BASEIMG}}{{cardImg[currTab-1].log}}"></image>
+			</view>
+		</view>
+		<view class="down" wx:if="{{isDown}}">到底了~</view>
+	</view>
+</view>

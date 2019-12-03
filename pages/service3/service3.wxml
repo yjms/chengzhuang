@@ -1,0 +1,40 @@
+<view class='wrap7'>
+  <view class='flex8'>
+    <view class='imgs9'></view>
+    <view class='flexcol'>
+      <view class='flexrow2'>
+        <view>
+          <view class='text13'>橙妆艾草蒸汽眼罩...</view>
+          <view class='text14'>商品描述（型号、尺寸）</view>
+        </view>
+        <!-- <view class='text16'>等待买家付款</view> -->
+      </view>
+      <view class='flexrow2'>
+        <view class='text19'>#4B5248</view>
+        <view>X6</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='flex22'>
+  <block wx:for="{{imgData}}" wx:key="imgData">
+    <view class='{{index===2?"flexrow22":"flexrow"}}'>
+      <view>
+        <view class='text25'>{{item.title}}</view>
+        <image wx:if="{{index===4}}" class='img25' src='../imgs/upload.png'></image>
+      </view>
+      <view wx:if="{{index===1||index===0}}" class='img30'>请选择</view>
+      <view wx:if="{{index===2}}" class='img28'>
+        <view class='flex29'>
+          <view class='text30'>姚雄耀</view>
+          <view class='text31'>13800138000</view>
+        </view>
+        <view class='text33'>广东广东省深圳市宝安区宝安中心大厦商业街AB-1号省深圳市宝安区宝安中心大厦商业街AB-1号</view>
+      </view>
+      <view wx:if="{{index===3}}" class='img31'>选填</view>
+      <image class='img29' src='{{item.imgs2}}'></image>
+    </view>
+  </block>
+  <view class='btn1'>提交</view>
+</view>

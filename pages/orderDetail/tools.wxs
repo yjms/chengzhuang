@@ -1,0 +1,7 @@
+function cut(arg1, arg2) {
+	   console.log("uuuu",arg1, arg2)
+	    return (arg1 * 100 - arg2 * 100)/100;
+}
+module.exports = {
+	cut:cut,
+}

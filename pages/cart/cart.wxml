@@ -1,0 +1,49 @@
+
+<!--        购物车商品列表              -->
+<view class='flex1'>
+  <block wx:for="{{detail}}" wx:key="detail">
+    <view class='itemWrap'>
+      <radio catchtap="checkFun" color='#6C8E5F' class='radioCss' data-index="{{index}}" checked="{{item.check}}" />
+      <image catchtap="navi21" data-item="{{item}}"  src="{{item.goods.mainImgPath}}" class='imgs'></image>
+      <view class='wrap2'>
+        <view class='flexrow flexJ'>
+          <view class='flexcol'>
+            <view class='text1'>{{item.goods.name}}</view>
+            <view class='text2'>{{item.goods.description}}</view>
+          </view>
+          <image class='imgs2' src='../imgs/del.png' data-index="{{index}}" catchtap="del" data-id="{{item.id}}"></image>
+        </view>
+        <view class='flexrow flexJ'>
+          <view class='flexrow'>
+            <view>￥</view>
+            <view>{{item.goods.price}}</view>
+          </view>
+          <view class='flexrow wd'>
+            <view catchtap="countM" data-item="{{item}}" data-index="{{index}}" data-type="1" class='btn1'>-</view>
+            <view class='num'>{{item.quantity}}</view>
+            <view catchtap="countM" data-item="{{item}}" data-index="{{index}}" data-type="2" class='btn1 bg2'>+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  
+<!--        全选     合计     结算              -->
+  <view class="noData" wx:if="{{!cartCount>0}}">天呐！购物车空空如也~</view>
+  <view class="zhanwei"></view>
+  <view class='fix flexC' wx:if="{{cartCount>0}}">
+    <view class='flexrow flexC'>
+      <radio catchtap="checkFun2" color='#6C8E5F' class='radioCss' checked="{{allcheck}}" />
+      <view class='text30'>全选</view>
+    </view>
+    <view class='flexcol mg20'>
+      <view class='flexrow flexC'>
+        <view class='text34'>合计：</view>
+        <view class='text35'>¥</view>
+        <view class='text35'>{{totalPrice}}</view>
+      </view>
+      <view class='text38'>不含运费等，实付金额以结算页面为准</view>
+    </view>
+    <view catchtap="navi44" class='btn3'>去结算</view>
+  </view>
+</view>
