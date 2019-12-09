@@ -1,0 +1,201 @@
+/* pages/shopstatus/shopstatus.wxss */
+page{
+	background-color: #F6F7F8;
+}
+.whole{
+	padding: 20rpx 27rpx;
+	box-sizing: border-box; 
+}
+.handbox{
+	width: 100%;
+	height: 238rpx;
+	background:rgba(254,254,255,1);
+	border-radius:12rpx;
+	padding: 28rpx;
+	box-sizing: border-box;
+	display: flex;
+}
+.leftimg{
+	width: 180rpx;
+	height: 180rpx;
+	background: center no-repeat/cover;
+}
+.rightinfo{
+	flex: 1;
+	padding-left: 20rpx;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+.rightinfo>text:first-child{
+	width: 256rpx;
+	font-size:30rpx;
+	font-family:PingFang;
+	font-weight:bold;
+	color:rgba(75,82,72,1);
+}
+.txt1{
+	font-size:24rpx;
+	font-family:PingFang;
+	font-weight:500;
+	color:rgba(168,173,166,1);
+	margin-top: 11rpx;
+}
+.shoppri{
+	display: flex;
+	justify-content: space-between;
+	margin-top:76rpx; 
+}
+.shoppri>text{
+	font-size:26rpx;
+	font-family:PingFang;
+	font-weight:bold;
+	color:rgba(75,82,72,1);
+}
+.shoppri>.pricetxt{
+	color:rgba(120,157,105,1);
+}
+.footbox{
+	width: 100%;
+	background:rgba(254,254,255,1);
+	border-radius:12rpx;
+	margin-top: 20rpx;
+	padding: 0 26rpx;
+	box-sizing: border-box;
+	padding-bottom: 70rpx;
+}
+.row1{
+	width: 100%;
+	height: 128rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.txt2{
+	font-size:28rpx;
+	font-family:PingFang SC;
+	font-weight:400;
+	color:rgba(75,82,72,1);
+}
+.txt3{
+	font-size:28rpx;
+	font-family:PingFang SC;
+	font-weight:500;
+	color:rgba(75,82,72,1);
+	margin-right: 36rpx;
+}
+.txt4{
+	font-size:28rpx;
+	font-family:PingFang SC;
+	font-weight:400;
+	color:rgba(168,173,166,1);
+	width: 230rpx;
+	text-align: right;
+	margin-right: 36rpx;
+}
+.tkreason{
+	font-size:28rpx;
+	font-family:PingFang SC;
+	font-weight:400;
+	width: 500rpx;
+}
+.photoimg{
+	width:160rpx;
+	height: 160rpx;
+	background: center no-repeat/cover;
+}
+.subBtn{
+	width:260rpx;
+	height:80rpx;
+	background:linear-gradient(180deg,rgba(120,157,105,1) 0%,rgba(108,142,95,1) 100%);
+	border-radius:15rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size:32rpx;
+	font-family:PingFang SC;
+	font-weight:400;
+	color:rgba(254,254,255,1);
+	margin: 0 auto;
+	margin-top:140rpx;
+}
+/* 货物状态 */
+.hw_pop{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 30rpx;
+	box-sizing: border-box;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 99;
+}
+.statuspop{
+	width:690rpx;
+	/* height:460rpx; */
+	background:rgba(255,255,255,1);
+	border-radius:8rpx;
+	padding-top: 60rpx;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 40rpx;
+}
+.txt2{
+	font-size:28rpx;
+	font-family:PingFang SC;
+	font-weight:500;
+	color:rgba(34,34,34,1);
+}
+.poprow1,.poprow2{
+	width: 100%;
+	padding: 0 50rpx;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+.poprow1{
+	margin-top: 59rpx;
+}
+.poprow2{
+	margin-top: 56rpx;
+}
+.poprow1>text,.poprow2>text{
+	font-size:28rpx;
+	font-family:PingFang SC;
+	font-weight:400;
+	color:rgba(34,34,34,1);
+}
+.poprow1>image,.poprow2>image{
+	width:34rpx;
+	height: auto; 
+}
+.flishbtn{
+	width:260rpx;
+	height:80rpx;
+	background:linear-gradient(180deg,rgba(120,157,105,1) 0%,rgba(108,142,95,1) 100%);
+	border-radius:15rpx;
+	margin-top: 50rpx;
+	font-size:32rx;
+	font-family:PingFang SC;
+	font-weight:400;
+	color:rgba(254,254,255,1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.righticon{
+	width: 36rpx;
+	height: 36rpx;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}

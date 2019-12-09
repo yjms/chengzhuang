@@ -1,0 +1,63 @@
+<!--pages/distribution/distrs/distrs.wxml-->
+<scroll-view scroll-y class="warp">
+  <!-- 用户信息 -->
+  <view class="header">
+    <view class="left">
+      <view class="uname">徐粑粑流沙小鱼儿</view>
+      <view class="ids">ID：124588</view>
+    </view>
+    <view class="right">
+      <image mode="widthFix" style="height:auto;" src="{{BASEIMG}}upload.png"></image>
+    </view>
+  </view>
+  <!-- 收益 -->
+  <view class="boxs" style="background-image:url({{BASEIMG}}sjbg.png);background-size:cover;">
+    <view class="box">
+      <view class="text1">￥9211450</view>
+      <view class="text2">总收益</view>
+    </view>
+    <view class="box">
+      <view class="text1">￥2016</view>
+      <view class="text2">今日收益</view>
+    </view>
+    <view class="box">
+      <view class="text1">￥206688</view>
+      <view class="text2">可提现金额</view>
+    </view>
+  </view>
+  <!-- 列表 -->
+  <view class="list">
+    <view class="flex">
+      <view class="f1">
+        <image mode="widthFix" style="height:auto;" src="{{BASEIMG}}team.png"></image> <text>我的团队</text>
+      </view>
+      <view class="f2">
+        <image mode="widthFix" style="height:auto;" src="{{BASEIMG}}right.png"></image>
+      </view>
+    </view>
+    <view class="flex">
+      <view class="f1">
+        <image mode="widthFix" style="height:auto;" src="{{BASEIMG}}tg.png"></image> <text>我要推广</text>
+      </view>
+      <view class="f2">
+        <image mode="widthFix" style="height:auto;" src="{{BASEIMG}}right.png"></image>
+      </view>
+    </view>
+    <view class="flex">
+      <view class="f1">
+        <image mode="widthFix" style="height:auto;" src="{{BASEIMG}}tx.png"></image> <text>收益提现</text>
+      </view>
+      <view class="f2">
+        <image mode="widthFix" style="height:auto;" src="{{BASEIMG}}right.png"></image>
+      </view>
+    </view>
+    <view class="flex">
+      <view class="f1">
+        <image mode="widthFix" style="height:auto;" src="{{BASEIMG}}yy.png"></image> <text>提现记录</text>
+      </view>
+      <view class="f2">
+        <image mode="widthFix" style="height:auto;" src="{{BASEIMG}}right.png"></image>
+      </view>
+    </view>
+  </view>
+</scroll-view>

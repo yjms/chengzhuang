@@ -1,0 +1,6 @@
+<!--pages/distribution/submitSuccess/submitSuccess.wxml-->
+<scroll-view scroll-y class="warp">
+  <image mode="widthFix" style="height:auto;" class="img" src="{{BASEIMG}}xf.png"></image>
+  <view class="text1">信息提交成功！</view>
+  <view class="text2">您的信息已经提交成功，请耐心等待！</view>
+</scroll-view>

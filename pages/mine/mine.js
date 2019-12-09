@@ -24,7 +24,7 @@ Component({
       title: '待收货'
     }, {
       imgs: '../imgs/m8.png',
-      title: '退款/售后'
+      title: '售后'
     }],
     imgData2: [{
       imgs: '../imgs/m5.png',
@@ -40,6 +40,12 @@ Component({
         title: '我的优惠劵',
         img2: '../imgs/2.png'
       }
+	//   ,
+	// 	{
+	// 		imgs: '../imgs/yh.png',
+	// 		title: '我的分销',
+	// 		img2: '../imgs/2.png'
+	// 	}
     ],
     orderCount:"",
   },
@@ -74,36 +80,38 @@ Component({
         })
       },
       navi20(e) {//判断跳订单类型
+		  let index = e.currentTarget.dataset.index + 1
+		  let type = e.currentTarget.dataset.type;
+		//   console.log('==',index,type);
+		//   return;
 		  if (!wx.getStorageSync('userInfo').avatarUrl) {
 			  wx.navigateTo({
 				  url: '/pages/login/login'
 			  })
 			  return;
 		  }
-        let index = e.currentTarget.dataset.index + 1
-		let type = e.currentTarget.dataset.type;
-		  console.log(index)
-		 
 		  if (index > 3 && type==1) {
-          wx.navigateTo({
-            url: '../return/return',
-          })
-		  } else if (index<=3) {
+			wx.navigateTo({
+				url: '/pages/salesafter/salesafter',
+			})
+		  	return;
+		  } else if (index<=3){
 			  wx.navigateTo({
 				  url: '../myOrder/myOrder?chooseIndex=' + index,
 			  })
 		  }
-		else if(index>3&&type!=1){
-			  wx.navigateTo({
-				  url: '../myOrder/myOrder?chooseIndex=' + index,
-			  })
+			else if(index>3&&type!=1){
+				wx.navigateTo({
+					url: '../myOrder/myOrder?chooseIndex=' + index,
+				})
 		}
 
         
       },
       navi(e) {//我的页面的列表跳转
 		  let index = e.currentTarget.dataset.index
-		  console.log(index)
+		//   console.log(index)
+		//   return;
 		  if (!wx.getStorageSync('userInfo').avatarUrl && index != 1) {
 			wx.navigateTo({
 				url: '/pages/login/login'
@@ -125,7 +133,12 @@ Component({
           wx.navigateTo({
             url: '../mytickets/mytickets',
           })
-        }        
+        }
+		if (index === 3){
+			  wx.navigateTo({
+				  url: '/pages/distribution/distrs/distrs',
+			  })
+		  }         
       },
       /**
        * 生命周期函数--监听页面初次渲染完成
@@ -210,7 +223,7 @@ Component({
       /**
        * 用户点击右上角分享
        */
-      onShareAppMessage: function() {
-      }
+    //   onShareAppMessage: function() {
+    //   }
   },     
 })

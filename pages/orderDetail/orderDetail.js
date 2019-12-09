@@ -18,6 +18,7 @@ Page({
 	yh_money:null,//优惠券金额
 	yh_id:null,//优惠券id
 	options:null,//接受跳转过来的参数
+	BASEIMG: "https://game.flyh5.cn/resources/game/wechat/yls/chengzhuang",//图片基路径
   },
 
   /**

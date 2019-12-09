@@ -17,7 +17,18 @@
 		"pages/cart/cart",
 		"pages/mine/mine",
 		"pages/logs/logs",
-		"pages/mytickets/mytickets"
+		"pages/mytickets/mytickets",
+		"pages/salesafter/salesafter",
+		"pages/applyth/applyth",
+		"pages/shopstatus/shopstatus",
+		"pages/distribution/cash/cash",
+		"pages/distribution/team/team",
+		"pages/distribution/exten/exten",
+		"pages/distribution/profit/profit",
+		"pages/distribution/distrs/distrs",
+		"pages/distribution/submitSuccess/submitSuccess",
+		"pages/distribution/infoReg/infoReg",
+		"pages/reGoods/reGoods"
 	],
 	"window": {
 		"backgroundTextStyle": "light",

@@ -46,10 +46,21 @@
         </view>
         <view class='flexrow'>
           <view class='text19'>￥{{item.goods.price}}</view>
-          <view>X{{item.quantity}}</view>
+          <view class="txt01">X{{item.quantity}}</view>
         </view>
       </view>
     </view>
+	<view class='flex30' >
+		<view class="tkbtn" bindtap="gorefund" data-obj="{{item}}" wx:if="{{item.status==3||item.status==4}}">退款</view>
+		<view class="tkbtn" bindtap="gocomfig"  data-obj="{{item}}" wx:if="{{item.status==5}}">已完成</view>
+		<view class="tkbtn" bindtap="gocomfig"  data-obj="{{item}}" wx:if="{{item.status==6}}">已关闭</view>
+		<view class="tkbtn" bindtap="gocomfig"  data-obj="{{item}}" wx:if="{{item.status==7}}">待退货</view>
+		<view class="tkbtn" bindtap="gocomfig"  data-obj="{{item}}" wx:if="{{item.status==8}}">寄货中</view>
+		<view class="tkbtn" bindtap="gocomfig" data-obj="{{item}}" wx:if="{{item.status==9}}">退货中</view>
+		<view class="tkbtn" bindtap="gocomfig" data-obj="{{item}}" wx:if="{{item.status==10}}">退货成功</view>
+		<view class="tkbtn" bindtap="gocomfig" data-obj="{{item}}" wx:if="{{item.status==11}}">已拒绝</view>
+		<view class="tkbtn"  data-obj="{{item}}" wx:if="{{item.status==12}}">关闭</view>
+	</view>
   </block>
   <view class='flex24'>
     <view class='flex25'>

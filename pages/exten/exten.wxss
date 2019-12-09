@@ -1,0 +1,41 @@
+/* pages/distribution/exten/exten.wxss */
+.content{
+  text-align: center;
+  padding-top: 30rpx;
+}
+.content .userImg{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+.content .uname{
+  padding-top: 26rpx;
+  font-size: 32rpx;
+  color: #333333;
+}
+.content .ids{
+  padding-top: 16rpx;
+  font-size: 24rpx;
+  color: #A5937F;
+}
+.content .tip{
+  padding-top: 96rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+.content .code{
+  width: 274rpx;
+  height: 274rpx;
+  padding-top: 12rpx;
+}
+.btn{
+  width: 260rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background:linear-gradient(180deg,rgba(120,157,105,1) 0%,rgba(108,142,95,1) 100%);
+  border-radius:15rpx;
+  box-shadow: 0px 3px 3px #C1CFBC;
+  color: #fff;
+  margin: 90rpx auto 50rpx;
+}

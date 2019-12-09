@@ -1,0 +1,17 @@
+<scroll-view scroll-y class="warp">
+  <view class="header">
+    <view class="h1">用户名称</view>
+    <view class="h1">提现时间</view>
+    <view class="h1">提现金额</view>
+  </view>
+  <view class="list">
+    <view class="flex" wx:for="{{8}}" wx:key="index">
+      <view class='f1'>秋名山车神</view>
+      <view class='f2'>2019-06-09 18:15</view>
+      <view class='f3'>62548.00</view>
+    </view>
+  </view>
+  <view class="tip">
+    <image mode="widthFix" style="height:auto;" src="{{BASEIMG}}dx.png"></image>
+  </view>
+</scroll-view>

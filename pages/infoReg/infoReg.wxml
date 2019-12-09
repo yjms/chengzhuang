@@ -1,0 +1,32 @@
+<!--pages/distribution/infoReg/infoReg.wxml-->
+<scroll-view scroll-y class="warp">
+  <view class="content">
+    <view class="flex">
+      <view class="text">姓名</view>
+      <view class="input">
+        <input placeholder="请输入您的姓名"></input>
+      </view>
+    </view>
+    <view class="flex">
+      <view class="text">联系方式</view>
+      <view class="input">
+        <input placeholder="请输入您的联系方式"></input>
+      </view>
+    </view>
+    <view class="flex">
+      <view class="text">身份证号码</view>
+      <view class="input">
+        <input placeholder="请输入您的身份证号码"></input>
+      </view>
+    </view>
+    <view class="upload1">
+      <view>身份证正面照片</view>
+      <image mode="widthFix" style="height:auto;" src="{{BASEIMG}}upload.png"></image>
+    </view>
+    <view class="upload2">
+      <view>身份证背面照片</view>
+      <image mode="widthFix" style="height:auto;" src="{{BASEIMG}}upload.png"></image>
+    </view>
+    <view class="btn">保存</view>
+  </view>
+</scroll-view>

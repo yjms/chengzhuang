@@ -1,0 +1,25 @@
+<!--pages/distribution/team/team.wxml-->
+<scroll-view scroll-y class="warp">
+  <view class="list">
+    <view class="li" wx:for="{{8}}" wx:key="index">
+      <view class="l1"><image></image></view>
+      <view class="l2">
+        <view class="l2_1">
+          <view class="text1">秋名山车神</view>
+          <view class="text2">ID：668450</view>
+        </view>
+        <view class="l2_1">
+          <view class="text1">一级成员</view>
+          <view class="text2">2019-06-09</view>
+        </view>
+        <view class="l2_1">
+          <view class="text1">总收益</view>
+          <view class="text2">112548</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="tip">
+    <image mode="widthFix" style="height:auto;" src="{{BASEIMG}}dx.png"></image>
+  </view>
+</scroll-view>

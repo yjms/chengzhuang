@@ -1,0 +1,70 @@
+<view class="whole">
+	<view class="handbox">
+		<view style="background-image:url({{shopData.img}})" class="leftimg"></view>
+		<view class="rightinfo">
+			<text class="nowrap">{{shopData.name}}</text>
+			<text class="nowrap txt1">{{shopData.description}}</text>
+			<view class="shoppri">
+				<text class="pricetxt">￥{{shopData.price}}</text>
+				<text>X{{shopData.num}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="footbox">
+		<view class="row1" bindtap="checkstatus">
+			<text class="txt2">货物状态</text>
+			<text class="txt3">{{_snum==1?'未收到货':(_snum==2?'已收到货':'请选择')}} </text>
+			<image mode="widthFix" src="{{BASEIMG}}/_righticon.png" class="righticon"></image>
+		</view>
+		<view class="row1" bindtap="checkreason">
+			<text class="txt2">退款原因</text>
+			<text class="txt4 nowrap">{{tkreason}}</text>
+			<image mode="widthFix" src="{{BASEIMG}}/_righticon.png" class="righticon"></image>
+		</view>
+		<view class="row1">
+			<text class="txt2">退款金额</text>
+			<text class="txt3">￥{{shopData.price}}</text>
+		</view>
+		<view class="row1">
+			<text class="txt2">退款说明</text>
+			<input type="text" name="reason" class="tkreason" placeholder="选填" bindinput="getval"></input>
+		</view>	
+		<view class="row1">
+			<text class="txt2">上传凭证</text>
+		</view>	
+		<view class="row2">
+			<view  style="background-image:url({{tkimg}})" bindtap="upImage" class="photoimg"></view>
+		</view>		
+		<view class="subBtn" bindtap="submit">提交</view>
+	</view>
+	<!-- 货物状态弹窗 -->
+	<view class="hw_pop" wx:if="{{_status}}">
+		<view class="statuspop">
+			<text class="txt2">货物状态</text>
+			<view class="poprow1" data-num="1" bindtap="select">
+				<text>未收到货</text>
+				<image mode="widthFix" src="{{BASEIMG}}/{{_snum==1?'sed.png':'nsed.png'}}" ></image>
+			</view>
+			<view class="poprow2" data-num="2" bindtap="select">
+				<text>已收到货</text>
+				<image mode="widthFix" src="{{BASEIMG}}/{{_snum==2?'sed.png':'nsed.png'}}" ></image>
+			</view>
+			<view class="flishbtn" bindtap="closePop">
+				完成
+			</view>
+		</view>
+	</view>
+	<!-- 退款原因 -->
+	<view class="hw_pop" wx:if="{{_reason}}">
+		<view class="statuspop">
+			<text class="txt2">退款原因</text>
+			<view class="poprow1" wx:for="{{_rtxt}}" wx:key="item" data-num="{{index}}" bindtap="_selects">
+				<text>{{item.txt}}</text>
+				<image mode="widthFix" src="{{BASEIMG}}/{{item.bol?'sed.png':'nsed.png'}}" ></image>
+			</view>
+			<view class="flishbtn" bindtap="closePop" data-num="2">
+				完成
+			</view>
+		</view>
+	</view>
+</view>

@@ -75,21 +75,13 @@ Page({
 
   navi43(e){
     console.log(e)
-    // this.payArray.forEach(p => {
-    //   idarr.push(p.id)
-    // });
-    // console.log(JSON.stringify(idarr))
-    // let id = JSON.stringify(idarr)
-    // wx.navigateTo({
-    //   url: '../orderDetail/orderDetail?jsonId=' + id,
-    // })
   },
   //点击跳转 订单详情页
   naviDetail(e) {//跳订单详情
     console.log(e)
     let id = e.currentTarget.dataset.item.id
     wx.navigateTo({
-      url: '../myOrderSend/myOrderSend?id=' + id
+      url: '../myOrderSend/myOrderSend?id=' + id 
     })
   },
   onLoad: function(options) {
@@ -210,11 +202,26 @@ Page({
       this.getData(this.data.chooseIndex)
     }
   },
-
+	comfigaccpt(e){
+		let dat = {
+			token: wx.getStorageSync('token'),
+			AddressId:e.currentTarget.dataset.aid,
+			tradeNo:e.currentTarget.dataset.no
+		}
+		apiModel.comfigshop(dat).then((res)=>{
+			if(res.code=='0000'){
+				wx.showToast({
+					icon:'none',
+					title: '收货成功！',
+				})
+				this.getData(3);	
+			}
+		})
+	}
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+//   onShareAppMessage: function() {
 
-  }
+//   }
 })

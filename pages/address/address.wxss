@@ -41,6 +41,7 @@ page {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  position: relative;
 }
 
 .text31 {
@@ -52,12 +53,14 @@ page {
   font-size: 32rpx;
   margin-right: 20rpx;
   font-weight: 600;
+  padding-left: 60rpx;
 }
 
 .text33 {
   color: #4b5248;
   font-size: 28rpx;
   margin-top: 10rpx;
+  padding-left: 60rpx;
 }
 
 .btn {
@@ -93,4 +96,12 @@ page{
   display: flex;
   flex-direction: column;
   align-items: center
+}
+.defuicon{
+	width:40rpx;
+	height: auto;
+	position: absolute;
+	left: 0;
+	/* top: 50%; */
+	transform: translateY(50%); 
 }

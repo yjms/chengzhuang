@@ -173,6 +173,41 @@ class Api extends HTTP {
 		  data: data
 	  })
   }   
+  applytk(data) {//申请退款
+	return this.request({
+		url: 'api/pay/wxRefund',
+		method: 'POST',
+		data: data
+	})
+}
+tkaddress(data) {//查询退货地址
+	return this.request({
+		url: 'api/order/refundAddress',
+		method: 'POST',
+		data: data
+	})
+}
+sendTheGoods(data) {//填写退货物流单号
+	return this.request({
+		url: 'api/order/sendTheGoods',
+		method: 'POST',
+		data: data
+	})
+}
+comfigshop(data) {//确认收货
+	return this.request({
+		url: 'api/order/confirmReceipt',
+		method: 'POST',
+		data: data
+	})
+}
+findRefundList(data) {//查询退款订单
+	return this.request({
+		url: 'api/order/findRefundList',
+		method: 'POST',
+		data: data
+	})
+}
 }
 
 export {

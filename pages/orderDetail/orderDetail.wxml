@@ -4,6 +4,7 @@
   <!-- <radio data-index="{{index}}" catchtap="checkRadio" color='#6C8E5F' class='radioCss' checked="{{item.check}}" /> -->
   <view class='img28'>
     <view class='flex29'>
+	  <image mode="widthFix" src="{{BASEIMG}}/dingweiicon.png" class="dwicon"></image>
       <view class='text30'>{{list[addid].name}}</view>
       <view class='text31'>{{list[addid].phone}}</view>
     </view>

@@ -1,0 +1,39 @@
+<view class="whole">
+	<view class="handbox">
+		<view style="background-image:url({{shopData.img}})" class="leftimg"></view>
+		<view class="rightinfo">
+			<text class="nowrap">{{shopData.name}}</text>
+			<text class="nowrap txt1">{{shopData.description}}</text>
+			<view class="shoppri">
+				<text class="pricetxt">￥{{shopData.price}}</text>
+				<text>X{{shopData.num}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="items">
+		<view class="rowbox" bindtap="lookStatus" data-txt="仅退款">
+			<image src="{{BASEIMG}}/jtk.png" mode="widthFix"></image>
+			<view class="rightbox">
+				<image mode="widthFix" src="{{BASEIMG}}/_righticon.png" class="righticon"></image>
+				<view class="txt2">仅退款</view>
+				<view class="txt3">未收到货（包含未签收），或卖家协商同意前提下</view>
+			</view>
+		</view>	
+		<view class="rowbox" bindtap="lookStatus" data-txt="退货退款">
+			<image src="{{BASEIMG}}/thtk.png" mode="widthFix"></image>
+			<view class="rightbox">
+				<image mode="widthFix" src="{{BASEIMG}}/_righticon.png" class="righticon"></image>
+				<view class="txt2">退货退款</view>
+				<view class="txt3">已收到货，需要退换已收到的货物</view>
+			</view>
+		</view>
+		<!-- <view class="rowbox" bindtap="lookStatus" data-txt="换货">
+			<image src="{{BASEIMG}}/thimg2.png" mode="widthFix"></image>
+			<view class="rightbox">
+				<image mode="widthFix" src="{{BASEIMG}}/_righticon.png" class="righticon"></image>
+				<view class="txt2">换货</view>
+				<view class="txt3">已收到货，需要更换已收到的货</view>
+			</view>
+		</view> -->
+	</view>
+</view>

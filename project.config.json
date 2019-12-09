@@ -52,7 +52,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
@@ -93,6 +93,84 @@
 					"id": -1,
 					"name": "pages/orderDetail/orderDetail",
 					"pathName": "pages/orderDetail/orderDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "salesafter",
+					"pathName": "pages/salesafter/salesafter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "applyth",
+					"pathName": "pages/applyth/applyth",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "shopstatus",
+					"pathName": "pages/shopstatus/shopstatus",
+					"query": "obj= {\"id\":21,\"name\":\"测试商品不发勿拍\",\"img\":\"http://flynew.oss-cn-hangzhou.aliyuncs.com/game/shop/1573047071549.jpg\",\"description\":\"1\",\"price\":0.01,\"num\":1,\"tradeNo\":\"1575425765633\",\"txt\":\"仅退款\"}",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "cash",
+					"pathName": "pages/distribution/cash/cash",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "reGoods",
+					"pathName": "pages/reGoods/reGoods",
+					"query": "obj={\"id\":21,\"name\":\"测试商品不发勿拍\",\"img\":\"http://flynew.oss-cn-hangzhou.aliyuncs.com/game/shop/1573047071549.jpg\",\"description\":\"1\",\"price\":0.01,\"num\":1,\"tradeNo\":\"1573111938970\",\"itemNo\":\"W1573111938976\",\"txt\":\"仅退款\"}",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "distrs",
+					"pathName": "pages/distribution/distrs/distrs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "exten",
+					"pathName": "pages/distribution/exten/exten",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "infoReg",
+					"pathName": "pages/distribution/infoReg/infoReg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "submitSuccess",
+					"pathName": "pages/distribution/submitSuccess/submitSuccess",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "team",
+					"pathName": "pages/distribution/team/team",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "address",
+					"pathName": "pages/address/address",
+					"query": "",
 					"scene": null
 				}
 			]

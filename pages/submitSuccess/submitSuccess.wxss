@@ -1,0 +1,19 @@
+/* pages/distribution/submitSuccess/submitSuccess.wxss */
+.warp{
+  text-align: center;
+}
+.img{
+  width: 104rpx;
+  margin-top: 180rpx;
+}
+.text1{
+  padding-top: 50rpx;
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #4B5248;
+}
+.text2{
+  padding-top: 18rpx;
+  font-size: 28rpx;
+  color: #789D69;
+}

@@ -1,0 +1,94 @@
+<view class='topWrap {{shopData.status==10?"sethei":""}}'>
+  <view class='wrap2'>
+	<view class='text3' wx:if="{{shopData.status==7}}">请等待商家处理</view>
+    <!-- <view class='text4' wx:if="{{shopData.status==7}}">还剩下4天23时39分</view> -->
+    <view class='text3' wx:if="{{shopData.status==8}}">商家同意退货退款</view>
+    <view class='text4' wx:if="{{shopData.status==8}}">商家已同意你的退款申请，请尽快填写物流信息</view>
+	<view class='text3' wx:if="{{shopData.status==9}}">退款中</view>
+    <view class='text4' wx:if="{{shopData.status==9}}">商家退款中</view>
+	<view class='text3' wx:if="{{shopData.status==10}}">退货成功</view>
+    <!-- <view class='text4' wx:if="{{shopData.status==10}}">2019年11月5日 18：16</view> -->
+	<view class='text3' wx:if="{{shopData.status==11}}">商家拒绝退货退款</view>
+    <!-- <view class='text4' wx:if="{{shopData.status==11}}">2019年11月5日 18：16</view> -->
+  </view>
+  <image class='img3' wx:if="{{shopData.status==7}}"  mode='widthFix' src='{{BASEIMG}}/waiticon.png'></image>
+  <image class='img3' wx:if="{{shopData.status==10}}"  mode='widthFix' src='{{BASEIMG}}/succIcon.png'></image>
+</view>
+<view class='flexT flexT2' wx:if="{{shopData.status==10}}" style="background-image:url({{BASEIMG}}/latiao.png)">
+	<text>退款总金额</text>
+	<text>￥{{shopData.price}}</text>
+</view>
+<view class='flexT' wx:if="{{shopData.status!=10}}">
+  <view class='flex9 bl b1'>
+    <view class='wrap10'>
+      <view class='flex11'>
+        <view class='flex12 _dflex' >
+		  <view class='text13' wx:if="{{shopData.status==7}}">
+		   	卖家同意您的换货申请前，无法预留商品库存，请联系商家尽快处理。
+          </view>
+		  <view class='text13' wx:if="{{shopData.status==8}}">
+		  		商家地址：{{wlData.refundAddress}}
+          </view>
+		  <view class='text13' wx:if="{{shopData.status==11}}">
+		  		理由：
+          </view>
+		  
+          <view class='text14 _text14' wx:if="{{shopData.status==8}}">联系电话：{{addressPhone}}</view>
+        </view>
+        <view class='text16'>{{detail.address.address}}{{detail.address.addressDetail}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='flex9 b2'></view>
+  
+  <view class="status7">
+      <text>· 若商家同意：换货申请达成，请您及时退货</text>
+	  <text>· 若商家拒绝：换货申请关闭，您可以联系商家协商处理</text>
+	  <text>· 若商家超时未响应：换货申请关闭，您可以联系商家协商处理</text>
+  </view>
+  
+  <view class='flex9 b2' wx:if="{{shopData.status==8}}">
+    <view class='wrap10 nl'>
+      <view class="flex11">
+        <view class='text22'>物流信息</view>
+        <view  class='text23 _text23'>
+			<input type="text" placeholder="请填写物流单号" class="dhipt" bindinput="getval"></input>
+			<view class="subBtn" bindtap="fillCode">提交</view>
+		</view>
+      </view>
+      <!-- <image class='img10 sz' src='../imgs/2.png'></image> -->
+    </view>
+  </view>
+</view>
+<view class='wrap7'>
+  <view class='flex24'>
+		<view class='flex25'>
+			<view>退款信息</view>
+		</view>
+		<view class="_shopBox">
+			<view class="_leftimg" style="background-image:url({{shopData.img}})"></view>
+			<view class="_rightimg">
+				<text class="nowarp _txt1">{{shopData.name}}</text>
+				<text class="nowarp _txt2">{{shopData.description}}</text>
+				<view class="footprice">
+					<text>￥{{shopData.price}}</text>
+					<text>x{{shopData.num}}</text>
+				</view>
+			</view>
+		</view>
+		<view class="_rowinfo">
+			<text>退款原因：{{wlData.refundCause}}</text>
+			<text>退款金额：{{wlData.refundPrice}}</text>
+			<text>申请时间：{{wlData.createDate}}</text>
+			<text>退款编号：{{wlData.refundTradeNo}}</text>
+		</view>
+		<view class="footbox">
+			<view>
+				<button open-type="contact" class="contactbtn"></button>
+				联系客服
+			</view>
+			<view  bindtap="callphone">拨打电话</view>
+		</view>
+  </view>
+</view>
+<view class="_footbox">-我是有底线的-</view>

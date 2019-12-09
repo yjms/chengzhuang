@@ -9,7 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+	  BASEIMG: "https://game.flyh5.cn/resources/game/wechat/yls/chengzhuang/",//图片基路径
   },
 
   /**

@@ -135,6 +135,9 @@ page {
 
 .text28 {
     margin-left: 80rpx;
+	display: block;
+	width: 150rpx;
+	text-align: right;
 }
 
 .text29 {
@@ -258,6 +261,7 @@ page {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+	position: relative;
 }
 
 .text31 {
@@ -269,12 +273,14 @@ page {
     font-size: 32rpx;
     margin-right: 20rpx;
     font-weight: 600;
+	padding-left: 70rpx;
 }
 
 .text33 {
     color: #4b5248;
     font-size: 28rpx;
     margin-top: 10rpx;
+	padding-left: 70rpx;
 }
 
 .btn {
@@ -300,4 +306,12 @@ page {
     font-family: PingFang SC;
     font-weight: 400;
     color: rgba(114, 149, 100, 1);
+}
+.dwicon{
+	width: 50rpx;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translateY(50%);
 }

@@ -1,0 +1,49 @@
+/* pages/distribution/infoReg/infoReg.wxss */
+.flex{
+  display: flex;
+  flex-direction: row;
+  padding-top: 68rpx;
+}
+.flex .text{
+  width: 140rpx;
+  color: #4B5248;
+  font-size: 28rpx;
+  font-weight: 600;
+  padding-left: 46rpx;
+  padding-right: 26rpx;
+}
+.flex .input input{
+  color: #A8ADA6;
+  font-size: 28rpx;
+}
+.upload1{
+  padding-top: 75rpx;
+  padding-left: 46rpx;
+  font-size: 28rpx;
+  color: #4B5248;
+  font-weight: 600;
+}
+.upload1 image,.upload2 image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-top: 22rpx;
+  margin-left: 161rpx;
+}
+.upload2{
+  padding-top: 47rpx;
+  padding-left: 46rpx;
+  font-size: 28rpx;
+  color: #4B5248;
+  font-weight: 600;
+}
+.btn{
+  width:260rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background:linear-gradient(180deg,rgba(120,157,105,1) 0%,rgba(108,142,95,1) 100%);
+  border-radius:15rpx;
+  box-shadow: 0px 3px 3px #C1CFBC;
+  color: #fff;
+  margin: 162rpx auto 50rpx;
+}

@@ -16,10 +16,15 @@
                             <text class='text13 '>{{item.goods.name}}</text>
                             <view class='text14 nowrap'>{{item.goods.description}}</view>
                         </view>
-                        <text class='text16' wx:if="{{item.status===2}}">等待买家付款</text>
-                        <text class='text16' wx:if="{{item.status===3}}">准备发货中</text>
-                        <text class='text16' wx:if="{{item.status===4}}">卖家已发货</text>
-                        <text class='text16' wx:if="{{item.status===5}}">已完成</text>
+                        <text class='text16' wx:if="{{item.status==2}}">等待买家付款</text>
+                        <text class='text16' wx:if="{{item.status==3}}">准备发货中</text>
+                        <text class='text16' wx:if="{{item.status==4}}">卖家已发货</text>
+                        <text class='text16' wx:if="{{item.status==5}}">已完成</text>
+						<text class='text16' wx:if="{{item.status==7}}">待退货</text>
+						<text class='text16' wx:if="{{item.status==8}}">买家寄货中</text>
+						<text class='text16' wx:if="{{item.status==9}}">退货中</text>
+						<text class='text16' wx:if="{{item.status==10}}">退货成功</text>
+						<text class='text16' wx:if="{{item.status==11}}">拒绝</text>
                     </view>
                     <view class='flexrow'>
                         <view class='text19'>￥{{item.goods.price}}</view>
@@ -49,7 +54,7 @@
             </view>
             <view wx:if="{{item.status===4}}" class='flex30'>
                 <view class='btn c50'>查看物流</view>
-                <view class='btn c38'>确认收货</view>
+                <view class='btn c38' catchtap="comfigaccpt" data-no="{{item.tradeNo}}" data-aid="{{list.address.addressId}}">确认收货</view>
             </view>
 
         </view>

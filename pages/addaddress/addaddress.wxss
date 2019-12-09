@@ -7,7 +7,9 @@
   align-items: center;
   position: relative
 }
-
+.flex>input{
+	width: 465rpx;
+}
 .text1 {
   color: #4b5248;
   font-size: 28rpx;

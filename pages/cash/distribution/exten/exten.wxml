@@ -1,0 +1,14 @@
+<!--pages/distribution/exten/exten.wxml-->
+<scroll-view scroll-y class="warp">
+  <view class="content">
+    <!--  用户信息  -->
+    <image class="userImg" mode="widthFix" style="height: auto;" src="{{BASEIMG}}upload.png"></image>
+    <view class="uname">徐粑粑流沙小鱼儿</view>
+    <view class="ids">ID：124588</view>
+    <!--   扫码  -->
+    <view class="tip">这里的东西很实惠，还能赚钱的！</view>
+    <image class="code" mode="widthFix" style="height:auto;" src="{{BASEIMG}}codes.png"></image>
+    <!-- 保存图片 -->
+    <view class="btn">保存图片</view>
+  </view>
+</scroll-view>

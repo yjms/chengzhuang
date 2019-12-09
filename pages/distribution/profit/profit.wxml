@@ -1,0 +1,23 @@
+<!--pages/distribution/profit/profit.wxml-->
+<scroll-view class="warp">
+  <view class="content">
+    <view class="text1">提现金额（元）：</view>
+    <view class="input">
+      <text>￥</text>
+      <input placeholder="请输入提现金额"></input>
+    </view>
+    <view class="flex">
+      <view class="left">可提现金额￥168260</view>
+      <view class="right">全部提现</view>
+    </view>
+    <view class="btn" bindtap="profit">提现</view>
+  </view>
+  <!-- 弹框 -->
+  <view class="popup" wx:if="{{isShow}}">
+    <view class="box">
+      <view class="tips">提示</view>
+      <view class="title">提现成功</view>
+      <view class="comfirm" bindtap="comfirm">确定</view>
+    </view>
+  </view>
+</scroll-view>

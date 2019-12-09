@@ -1,0 +1,72 @@
+/* pages/distribution/distrs/distrs.wxss */
+.header{
+  padding: 44rpx 54rpx 30rpx 52rpx;
+  display: flex;
+  flex-direction: row;
+}
+.header .left{
+  width: 500rpx;
+}
+.header .left .uname{
+  padding-top: 20rpx;
+  font-size: 32rpx;
+  color: #333333;
+}
+.header .left .ids{
+  padding-top: 18rpx;
+  font-size: 24rpx;
+  color: #A5937F;
+}
+.header .right image{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+}
+.boxs{
+  width: 750rpx;
+  height: 170rpx;
+  padding: 0 60rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+.boxs .box{
+  flex: 1;
+  text-align: center;
+}
+.boxs .box .text1{
+  padding-top: 40rpx;
+  font-weight: 600;
+  font-size: 30rpx;
+  color: #B9473F;
+}
+.boxs .box .text2{
+  padding-top: 4rpx;
+  font-size: 24rpx;
+  color: #B9473F;
+}
+.list{
+  padding-top: 35rpx;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  padding: 0 43rpx 50rpx 47rpx;
+}
+.flex .f1 image{
+  width: 40rpx;
+  vertical-align: middle;
+}
+.flex .f1 text{
+  font-size: 26rpx;
+  color: #333333;
+  vertical-align: middle;
+  padding-left: 10rpx;
+}
+.flex .f2{
+  flex: 1;
+  text-align: right;
+}
+.flex .f2 image{
+  width: 30rpx;
+}
