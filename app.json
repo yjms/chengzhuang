@@ -28,7 +28,8 @@
 		"pages/distribution/distrs/distrs",
 		"pages/distribution/submitSuccess/submitSuccess",
 		"pages/distribution/infoReg/infoReg",
-		"pages/reGoods/reGoods"
+		"pages/reGoods/reGoods",
+		"pages/test/test"
 	],
 	"window": {
 		"backgroundTextStyle": "light",

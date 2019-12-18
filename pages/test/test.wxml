@@ -1,0 +1,4 @@
+<view class="whole">
+	<view wx:for="{{arr}}" data-ee="{{curridx}}" class="{{curridx==index?'active':''}}" data-index="{{index}}" style="background-color:{{item.color}}" bindtap="changepor">{{item.txt}}</view>
+	<view class="close" wx:if="{{curridx!=-1}}" bindtap="closepop">x</view>
+</view>

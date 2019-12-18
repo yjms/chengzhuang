@@ -29,11 +29,10 @@
 		  <view class='text13' wx:if="{{shopData.status==8}}">
 		  		商家地址：{{wlData.refundAddress}}
           </view>
+		  <view class='text14 _text14' wx:if="{{shopData.status==8}}">联系电话：{{wlData.refundAddressPhone}}</view>
 		  <view class='text13' wx:if="{{shopData.status==11}}">
-		  		理由：
+		  		理由：影响二次营销
           </view>
-		  
-          <view class='text14 _text14' wx:if="{{shopData.status==8}}">联系电话：{{addressPhone}}</view>
         </view>
         <view class='text16'>{{detail.address.address}}{{detail.address.addressDetail}}</view>
       </view>

@@ -64,6 +64,7 @@ page {
     background: white;
     border-radius: 10rpx;
     position: relative;
+	padding-bottom: 0;
 }
 
 .text38 {
@@ -206,7 +207,7 @@ page {
     background: white;
     display: flex;
     align-items: center;
-    padding-bottom: 40rpx;
+    /* padding-bottom: 40rpx; */
 }
 
 .btn60 {

@@ -172,6 +172,12 @@
 					"pathName": "pages/address/address",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"scene": null
 				}
 			]
 		}
